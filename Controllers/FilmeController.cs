@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FilmesAPI.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FilmesAPI.Controllers
 {
