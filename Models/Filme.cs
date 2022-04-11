@@ -4,6 +4,10 @@ namespace FilmesAPI.Models
 {
     public class Filme
     {
+        [Key]
+        [Required(ErrorMessage = "required")]
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "required")]
         [Display(Name = "titulo")]
         public string Titulo { get; set; }
