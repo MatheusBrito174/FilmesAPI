@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="codigo" xml:space="preserve">
-    <value>Código</value>
+    <value>Code</value>
   </data>
   <data name="codigoLength" xml:space="preserve">
-    <value>O campo {0} deve ter no máximo {1} caractéres.</value>
+    <value>The field {0} must be less than {1} caracters long.</value>
   </data>
   <data name="descricao" xml:space="preserve">
-    <value>Descrição</value>
+    <value>Description</value>
   </data>
   <data name="nome" xml:space="preserve">
-    <value>Nome</value>
+    <value>Name</value>
   </data>
   <data name="required" xml:space="preserve">
-    <value>O campo {0} é obrigatório.</value>
+    <value>The {0} is required.</value>
   </data>
 </root>

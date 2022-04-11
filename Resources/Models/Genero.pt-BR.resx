@@ -120,14 +120,17 @@
   <data name="codigo" xml:space="preserve">
     <value>Código</value>
   </data>
-  <data name="codigoLength" xml:space="preserve">
-    <value>O campo {0} deve ter no máximo {1} caractéres.</value>
-  </data>
   <data name="descricao" xml:space="preserve">
     <value>Descrição</value>
   </data>
+  <data name="length" xml:space="preserve">
+    <value>O campo {0} deve ter no máximo {1} caractéres.</value>
+  </data>
   <data name="nome" xml:space="preserve">
     <value>Nome</value>
+  </data>
+  <data name="regexCodigo" xml:space="preserve">
+    <value>O campo {0} deve possuir apenas letras maiúsculas e underscore.</value>
   </data>
   <data name="required" xml:space="preserve">
     <value>O campo {0} é obrigatório.</value>
