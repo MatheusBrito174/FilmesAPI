@@ -1,3 +1,4 @@
+using FilmesAPI;
 using FilmesAPI.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -5,7 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
-builder.Services.AddMvc().AddDataAnnotationsLocalization();
+builder.Services
+    .AddMvc()
+    .AddDataAnnotationsLocalization(options => {
+        options.DataAnnotationLocalizerProvider = (type, factory) => factory.Create(typeof(SharedResource));
+    });
 
 var connectionString = builder.Configuration.GetConnectionString("FilmesConnection");
 var serverVersion = ServerVersion.AutoDetect(connectionString);

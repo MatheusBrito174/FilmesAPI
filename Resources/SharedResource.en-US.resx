@@ -127,7 +127,7 @@
     <value>Genre</value>
   </data>
   <data name="range" xml:space="preserve">
-    <value>The field {0} must be between {1} e {2} minutes.</value>
+    <value>The field {0} must be between {1} and {2} minutes.</value>
   </data>
   <data name="required" xml:space="preserve">
     <value>The field {0} is required.</value>
