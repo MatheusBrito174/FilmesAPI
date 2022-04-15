@@ -19,7 +19,7 @@ namespace FilmesAPI.Controllers
             _mapper = mapper;
         }
 
-        [HttpPost(Name = "CadastrarFilme")]
+        [HttpPost(Name = nameof(CadastrarFilme))]
         public IActionResult CadastrarFilme([FromBody] CreateFilmeDto filmeDto)
         {
             Filme filme = _mapper.Map<Filme>(filmeDto);
@@ -29,7 +29,7 @@ namespace FilmesAPI.Controllers
             return CreatedAtAction(nameof(BuscarFilmes), new { Id = filme.Id }, filme);
         }
 
-        [HttpGet("{id?}", Name = "BuscarFilmes")]
+        [HttpGet("{id?}", Name = nameof(BuscarFilmes))]
         public IActionResult BuscarFilmes(int? id)
         {
             if (id == null)
@@ -50,7 +50,7 @@ namespace FilmesAPI.Controllers
             return NotFound();
         }
 
-        [HttpPut("{id}", Name = "AtualizarFilme")]
+        [HttpPut("{id}", Name = nameof(AtualizarFilme))]
         public IActionResult AtualizarFilme(int id, [FromBody] UpdateFilmeDto filmeDto)
         {
             Filme? filme = _context.Filmes.FirstOrDefault(f => f.Id == id);
@@ -67,7 +67,7 @@ namespace FilmesAPI.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id}", Name = "RemoverFilme")]
+        [HttpDelete("{id}", Name = nameof(RemoverFilme))]
         public IActionResult RemoverFilme(int id)
         {
             Filme? filme = _context.Filmes.FirstOrDefault(f => f.Id == id);
