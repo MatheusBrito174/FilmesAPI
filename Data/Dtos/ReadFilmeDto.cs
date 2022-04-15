@@ -23,6 +23,6 @@ namespace FilmesAPI.Data.Dtos
         [Display(Name = "duracao")]
         public int Duracao { get; set; }
 
-        public DateTime HoraDaConsulta { get; set; }
+        public DateTime HoraDaConsulta => DateTime.Now;
     }
 }
